@@ -1,0 +1,32 @@
+<html>
+<head>
+    
+</head>
+<body>
+    <div>
+        <h1> Pagador de Boletos </h1>
+
+        <p>Seja Bem vindo {{dados_Usuario.name}}</p>
+
+        <p> Saldo Atual</p>
+
+        <p> {{ dados_Usuario.saldo }}</p>
+
+  
+        <button id = "myButton"> Pagar um Boleto </button>
+        <button id = "myButton2"> Cobrar Um Amigo </button>
+        
+    </div>
+<script type = "text/javascript">
+ document.getElementById("myButton").onclick = function()
+{
+  location.href = "/boleto" 
+}
+ document.getElementById("myButton2").onclick = function()
+{
+  location.href = "/cobranca" 
+}
+</script>
+</body>  
+
+</html>

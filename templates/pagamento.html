@@ -1,0 +1,28 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <h1> Valor a Ser Pago</h1>
+      <p id = "valor"> {{valor}} </p>
+      <h2> Saldo Atual</h2>
+      <p> {{dados.saldo}} </p>
+      <h2>Saldo após pagamento</h2>
+      <p>{{novoSaldo}}</p>
+    <form action="/pagar" method="POST">
+      <input type="text" name="saldo" value= "{{novoSaldo}} "style="display:none"/>
+      <button id="myButton" type="submit">
+        Realizar Pagamento
+      </button>
+    </form>
+    <!--
+   <script type = "text/javascript">
+   document.getElementById("myButton").onclick = function()
+  {
+    location.href = "/pagar"
+  }
+     
+   </script>
+-->
+  </body>
+ 
+</html>
